@@ -1,0 +1,36 @@
+$white: #fff;
+$darkGrey: #333;
+$lightGrey: #666;
+$pink: #eba6aa;
+$blue: #88cce2;
+$beige: #d7b89c;
+$baseFont: 'Poppins', sans-serif;
+
+html {
+    font-size: 125%;
+    background: $white;
+    font-family: $baseFont;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+button {
+    background: $white;
+    text-decoration: none;
+    border: 0.05rem solid $darkGrey;
+    padding: 0.75rem 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $darkGrey;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+}
+

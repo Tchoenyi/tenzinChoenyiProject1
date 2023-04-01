@@ -1,0 +1,39 @@
+@use "styleGuide" as var;
+
+.wrapperSmall {
+    max-width: 72rem;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.imgGallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem 0;
+    li {
+        flex-basis: calc(100% / 3 - 1rem);
+        position: relative;
+        img {
+        max-width: 100%;
+        width: auto;
+        height: 100%;
+        }
+    }
+}
+
+.imgGallery li:nth-child(2) {
+    top: -1.5rem;
+}
+
+.absoluteText {
+    background: var.$white;
+    padding: 0.5rem;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+
+
+    position: absolute;
+    bottom: 0.5rem;
+    
+}
