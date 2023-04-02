@@ -4,20 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Novas Contact Page</title>
     <link rel="stylesheet" href="styles/style.css">
-    <style>
-        html {
-            background: cadetblue;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <section class="navBarContainer">
+            <div class="wrapper">
+                <nav class="homeNavBar">
+                    <img src="./assets/logo-black.png" alt="Novas Logo">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+        
+                    <img src="./assets/icons/shopping-cart-black-icon.png" alt="checkout icon">
+                </nav>
+            </div>
+        </section>
+        <section class="contactHeadingContainer">
+            <div class="wrapper">
+                <h1>Contact Us</h1>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="contactSubmissions">
+            <div class="wrapper">
+                <form>
+                    <label for="name" class="sr-only">Your Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                </form>
+                <form>
+                    <label for="email" class="sr-only">Your Email</label>
+                    <input type="text" id="email" placeholder="Your Email">
+                </form>
+                <form>
+                    <label for="message" class="sr-only">Your Message</label>
+                    <input type="text" id="message" placeholder="Your Message">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapperSmall">
+            <ul class="footerContainer">
+                <li>
+                    <div class="footerNovas">
+                        <img src="./assets/logo-white.png" alt="Novas logo">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                        <ul class="svgIcon">
+                            <li><img src="./assets/icons/facebook.svg" alt="Facebook icon"></li>
+                            <li><img src="./assets/icons/twitter.svg" alt="Twitter icon"></li>
+                            <li><img src="./assets/icons/instagram.svg" alt="Instagram icon"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footerContact">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>
+                                <img src="./assets/icons/address.svg" alt="Home icon">
+                                <p>No 40 Baria Street</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><img src="./assets/icons/telephone.svg" alt="Phone icon">
+                                <p>156-366-6666</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><img src="./assets/icons/email.svg" alt="mail icon">
+                                <p>cool@example.com</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><img src="./assets/icons/globe.svg" alt="globe icon">
+                                <p>www.novas.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footerProfile">
+                        <h3>Profile</h3>
+                        <ul>
+                            <li>
+                                <img src="./assets/icons/user.svg" alt="Home icon">
+                                <p>My Account</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><img src="./assets/icons/checkout.svg" alt="Phone icon">
+                                <p>Checkout</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><img src="./assets/icons/tracking.svg" alt="mail icon">
+                                <p>Order Tracking</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><img src="./assets/icons/support.svg" alt="globe icon">
+                                <p>Help & Support</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="foorterNewsletter">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to or newsletter</p>
+                        <form>
+                            <label for="email" class="sr-only">Enter your email</label>
+                            <input type="text" id="email" placeholder="Your e-mail...">
+                        </form>
+                        <p>@ 2023 Novas.</p>
+        
+                    </div>
+                </li>
+        
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

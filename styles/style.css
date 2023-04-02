@@ -281,6 +281,10 @@ h2 {
   font-size: 2rem;
 }
 
+p {
+  font-weight: 400;
+}
+
 .homeNavBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,7 +539,7 @@ button {
 
 footer {
   background: #333;
-  padding: 5rem 0;
+  padding: 2.5rem 0 1.5rem;
 }
 footer .footerNovas img {
   margin-bottom: 1.25rem;
@@ -612,4 +616,22 @@ input[type=text] {
   background: #333;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
+}
+
+.contactHeadingContainer {
+  background: url(../assets/contact-us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.contactHeadingContainer .wrapper {
+  width: 65%;
+  color: #333;
+  padding: 4rem 0;
+}
+.contactHeadingContainer .wrapper h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0;
 }

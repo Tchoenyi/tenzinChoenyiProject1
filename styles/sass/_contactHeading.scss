@@ -1,0 +1,22 @@
+@use "styleGuide" as var;
+
+.contactHeadingContainer {
+    background: url(../assets/contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100%;
+
+    .wrapper {
+        width: 65%;
+        color: var.$darkGrey;
+        padding: 4rem 0;
+
+        h1 {
+            font-weight: 500;
+            font-size: 2rem;
+            margin: 0;
+        }
+    }
+
+}

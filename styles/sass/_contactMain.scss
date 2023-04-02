@@ -1,0 +1,17 @@
+@use "styleGuide" as var;
+
+
+
+
+input[type=text] {
+        color: var.$lightGrey;
+        font-family: var.$baseFont;
+        font-size: 0.75rem;
+        border: none;
+        border-bottom: 0.05rem solid var.$lightGrey;
+        width: 80%;
+        padding-bottom: 0.25rem;
+        background: var.$white;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+}
