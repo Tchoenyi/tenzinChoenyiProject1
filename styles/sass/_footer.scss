@@ -1,0 +1,79 @@
+@use "styleGuide" as var;
+
+footer {
+    background: var.$darkGrey;
+    padding: 5rem 0;
+
+
+    .footerNovas img {
+        margin-bottom: 1.25rem;
+    }
+    // img {
+    //     margin-bottom: 1.25rem;
+    // }
+
+    h3 {
+        color: var.$white;
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    p {
+        margin: 0.5rem 0;
+        color: var.$white;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+    }
+
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        flex-basis: calc(100% / 4 - 1rem);
+    }
+}
+
+.svgIcon {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.75rem;
+    li {
+        flex-basis: calc(100% / 3 - 1rem);
+        margin-right: 0.5rem;
+
+        img {
+            width: 40%;
+            height: 30%;
+        }
+    }
+}
+
+.footerContact ul li,
+.footerProfile ul li {
+    display: flex;
+    img {
+        width: 7.5%;
+        margin-right: 0.5rem;
+    }
+    p {
+        margin: 0.25rem 0;
+    }
+}
+
+input[type=text] {
+    color: var.$lightGrey;
+    font-family: var.$baseFont;
+    font-size: 0.75rem;
+    border: none;
+    border-bottom: 0.05rem solid var.$lightGrey;
+    width: 80%;
+    padding-bottom: 0.25rem;
+    background: var.$darkGrey;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+

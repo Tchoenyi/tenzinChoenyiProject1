@@ -1,11 +1,5 @@
 @use "styleGuide" as var;
 
-.wrapper {
-    max-width: 72rem;
-    width: 95%;
-    margin: 0 auto;
-}
-
 .homeNavBar {
     display: flex;
     justify-content: space-between;
@@ -27,25 +21,26 @@
 .headingContainer {
     background: url(../assets/home.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
     background-size: cover;
     background-position: center;
+    height: 100vh;
 
-    .headingText {
-        width: 25%;
-        margin-left: 10rem;
+    .wrapper {
+        width: 70%;
         color: var.$darkGrey;
+        padding-top: 6.5rem;
         h1 {
             font-weight: 500;
             font-size: 3.5rem;
-            margin: 0 0;
-            padding-top: 50%;
+            margin: 0;
         }
         
         p {
             color: var.$lightGrey;
             font-weight: 400;
             font-size: 1rem;
+            line-height: 1.25rem;
+            width: 30%;
         }
     }
     

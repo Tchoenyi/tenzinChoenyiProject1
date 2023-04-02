@@ -1,0 +1,28 @@
+@use "styleGuide" as var;
+
+.instagramText {
+    text-align: center;
+    
+    h2 {
+        margin: 0 0;
+        font-weight: 500;
+        
+    }
+
+    p {
+        color: var.$lightGrey;
+        margin-top: 0.5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.instagramGallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    li {
+        flex-basis: calc(100% / 5 - 1rem);
+        
+    }
+}

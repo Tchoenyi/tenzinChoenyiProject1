@@ -1,11 +1,5 @@
 @use "styleGuide" as var;
 
-.wrapperSmall {
-    max-width: 72rem;
-    width: 65%;
-    margin: 0 auto;
-}
-
 .imgGallery {
     display: flex;
     justify-content: space-between;

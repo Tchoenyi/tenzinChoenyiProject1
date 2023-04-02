@@ -34,3 +34,29 @@ img {
     display: block;
 }
 
+.wrapper {
+    max-width: 72rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.wrapperSmall {
+    max-width: 72rem;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.wrapperMedium {
+    max-width: 72rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+h2 {
+    color: $darkGrey;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
