@@ -73,4 +73,57 @@ input[type=text] {
     margin-top: 0.5rem;
 }
 
+@media(max-width: 600px) {
+    footer {
 
+        .footerNovas img {
+                margin-bottom: 1.25rem;
+                margin-top: 0%;
+        }
+
+        h3 {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        p {
+            font-size: 0.65rem;
+        }
+
+    }
+    
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+
+        li {
+            flex-basis: calc(100% / 4 - 2rem);
+        }
+    }
+    
+    .footerContact ul li,
+    .footerProfile ul li {
+        img {
+            width: 5%;
+        }
+    }
+}
+
+
+
+@media(max-width: 320px) {
+    footer {
+        .footerContainer li {
+            flex-basis: calc(100% / 3 - 0.75rem);
+            
+        }
+
+        .footerContact ul li,
+        .footerProfile ul li {
+            img {
+                width: 10%;
+            }
+        }
+    }
+}

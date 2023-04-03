@@ -5,23 +5,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 10rem;
-
     .img1 {
         width: 33%;
         position: relative;
 
         .absoluteTextSaleUpTo {
-                background: var.$white;
-                text-transform: uppercase;
-                padding: 0.25rem 0.75rem;
-                margin: 0;
-                text-align: center;
-                font-size: 0.75rem;
-                color: var.$beige;
-        
-                position: absolute;
-                bottom: 7rem;
-                right: 5rem;
+            background: var.$white;
+            text-transform: uppercase;
+            padding: 0.25rem 0.75rem;
+            margin: 0;
+            text-align: center;
+            font-size: 0.75rem;
+            color: var.$beige;
+    
+            position: absolute;
+            bottom: 7rem;
+            right: 5rem;
         }
         .fiftyOff {
             color: var.$white;
@@ -67,6 +66,85 @@
 
 }
     
+@media(max-width:600px) {
+    .saleLinkImages .wrapperSmall ul {
+        display: block;
+        margin-bottom: 5rem;
+
+        .img1 {
+            width: 100%;
+
+            .absoluteTextSaleUpTo {
+                bottom: 9rem;
+                right: 6.5rem;
+            }
+
+            .fiftyOff { 
+                bottom: 2.5rem;
+                right: 4.5rem;
+            }
+
+            a {
+                bottom: 3.5rem;
+                right: 6rem;
+            }
+
+        }
+        
+        .img2 {
+            width: 100%;
+
+            .absoluteTextThirtyOff {
+                margin: 0 0;
+                top: 1rem;
+                right: 3.25rem;
+                font-size: 1rem;
+                padding: 0.25rem 0.25rem;
+            }
+        }
+    }
+}
+
+@media(max-width:320px) {
+    .saleLinkImages .wrapperSmall ul {
+        .img1 {
+
+            .absoluteTextSaleUpTo {
+                bottom: 4.75rem;
+                right: 3.25rem;
+                font-size: 0.5rem;
+                padding: 0.1rem 0.5rem;
+            }
+
+            .fiftyOff {
+                bottom: 1rem;
+                right: 2.25rem;
+                font-size: 1.5rem;
+            }
+
+            a {
+                bottom: 1.75rem;
+                right: 3.5rem;
+                font-size: 0.5rem;
+            }
+
+        }
+
+        .img2 {
+
+            .absoluteTextThirtyOff {
+                margin: 0 0;
+                top: 0.35rem;
+                right: 2rem;
+                font-size: 0.5rem;
+
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
 
 
 

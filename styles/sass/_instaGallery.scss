@@ -26,3 +26,20 @@
         
     }
 }
+
+@media(max-width:600px) {
+    .instagramText {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.75rem;
+        }
+    }
+
+    .instagramGallery ul li {
+        flex-basis: calc(100% / 2 - 1rem);
+        margin-bottom: 1rem;
+    }
+}

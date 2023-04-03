@@ -14,9 +14,34 @@
 
         h1 {
             font-weight: 500;
-            font-size: 2rem;
+            font-size: 3rem;
             margin: 0;
         }
     }
 
+}
+
+@media(max-width:600px) {
+    .contactHeadingContainer {
+            height: auto;
+    
+            .wrapper {
+    
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+        }
+}
+
+@media(max-width:320px) {
+    .contactHeadingContainer {
+        height: 7rem;
+        .wrapper {
+            padding: 2rem 0;
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }

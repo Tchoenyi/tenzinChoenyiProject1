@@ -3,15 +3,46 @@
 
 
 
-input[type=text] {
+.contactSubmissions .wrapper {
+        width: 65%;
+        margin-top: 4rem;
+
+        input[type=text] {
+                color: var.$lightGrey;
+                font-family: var.$baseFont;
+                font-size: 0.75rem;
+                border: none;
+                border-bottom: 0.05rem solid var.$lightGrey;
+                padding-bottom: 0.25rem;
+                background: var.$white;
+                width: 40%;
+        }
+
+        form:nth-child(3) input[type=text] {
+                padding-bottom: 2rem;
+                
+        }
+}
+
+input[type=submit] {
         color: var.$lightGrey;
-        font-family: var.$baseFont;
-        font-size: 0.75rem;
-        border: none;
-        border-bottom: 0.05rem solid var.$lightGrey;
-        width: 80%;
-        padding-bottom: 0.25rem;
+        border: 0.05rem solid var.$lightGrey;
         background: var.$white;
-        margin-bottom: 1rem;
+        font-size: 0.75rem;
+        font-weight: 400;
+        padding: 0.5rem 1.5rem;
         margin-top: 0.5rem;
+        margin-bottom: 4rem;
+}
+
+@media(max-width:600px) {
+        .contactSubmissions .wrapper input[type=text]{
+                width: 60%;
+        }
+}
+
+@media(max-width:320px) {
+        .contactSubmissions .wrapper input[type=text] {
+                        width: 80%;
+        }
 }

@@ -16,6 +16,10 @@
             color: var.$darkGrey;
         }
     }
+    img:nth-of-type(3) {
+        width: 10%;
+        display: none;
+    }
 }
 
 .headingContainer {
@@ -31,7 +35,7 @@
         padding-top: 6.5rem;
         h1 {
             font-weight: 500;
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin: 0;
         }
         
@@ -39,10 +43,60 @@
             color: var.$lightGrey;
             font-weight: 400;
             font-size: 1rem;
-            line-height: 1.25rem;
             width: 30%;
         }
     }
     
 }
 
+
+@media (max-width: 600px) {
+    .homeNavBar {
+        img {
+            width: 20%;
+        }
+        img:nth-of-type(3) {
+            display: block;
+        }
+
+        ul {
+            display: none;
+        }
+        img:nth-of-type(2) {
+            display: none;
+        }
+    }
+
+    .headingContainer {
+        height: auto;
+        .wrapper {
+            width: 70%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            h1 {
+                font-size: 2rem;
+            }
+        
+            p {
+                width: 50%;
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .homeNavBar {
+        img {
+                width: 30%;
+            }
+    }
+
+    .headingContainer {
+        .wrapper {
+            p {
+                width: 60%;
+            }
+        }
+    }
+}
