@@ -139,5 +139,49 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+
+        const formElement = document.querySelectorAll('form');
+        formElement.forEach(element => {
+            console.log(element);
+            element.addEventListener('submit', function (e) {
+                // prevent form default
+                e.preventDefault();
+                const inputElementList = document.querySelectorAll('input[type = "text"]');
+                inputElementList.forEach(inputElementValue => {
+                    console.log(inputElementValue);
+                    const task = inputElementValue.value;
+                    console.log(task);
+
+                    if (task) {
+                        inputElementValue.value = '';
+                        
+                    }
+                });          
+                alert(`We have got your submission! :) We will be sending you an update shortyly. Thank you`)    
+            });
+        });
+        
+        //     // listen to when that form is submitted
+        // formElement.addEventListener('submit', function (e) {
+        //     // prevent form default
+        //     event.preventDefault();
+        //     // get the input value from the user and store it
+        //     const inputElement = document.querySelector('input');
+        //     // assigning task the value(the user's input) of our inputElement
+        //     const task = inputElement.value;
+
+        //     // checks if the input is empty or not, and if not then do the following:
+        //     if (task) {
+        //         // clears the form
+        //         inputElement.value = '';
+        //         // pop up aleart letting the user know their email has been submitted
+        //         alert(`Thank you for Subscibing to our newsletter`);
+        //     } // if it is empty then do nothing because the form is not mandatory for our site porpuse.
+        // });
+
+    </script>
+
 </body>
 </html>
