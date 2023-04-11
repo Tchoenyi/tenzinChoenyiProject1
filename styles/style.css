@@ -317,6 +317,19 @@ p {
   display: none;
 }
 
+.navBarContainer .wrapper #hamburgerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: none;
+}
+.navBarContainer .wrapper #hamburgerMenu li a {
+  color: #333;
+  text-decoration: none;
+}
+
 .headingContainer {
   background: url(../assets/home.jpg);
   background-repeat: no-repeat;

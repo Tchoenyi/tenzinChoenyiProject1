@@ -22,6 +22,16 @@
     }
 }
 
+.navBarContainer .wrapper #hamburgerMenu {
+    display: flex;
+    justify-content: space-around;
+    li a {
+        color: var.$darkGrey;
+        text-decoration: none;
+    }
+    display: none;
+}
+
 .headingContainer {
     background: url(../assets/home.jpg);
     background-repeat: no-repeat;

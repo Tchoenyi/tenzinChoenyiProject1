@@ -25,6 +25,11 @@
                     <img src="./assets/icons/shopping-cart-black-icon.png" alt="checkout icon">
                     <img src="./assets/icons/hamburger-menu-svgrepo-com.svg" alt="Hamburger drop down menu">
                 </nav>
+                <ul id="hamburgerMenu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
             </div>
         </section>
         <section class="headingContainer">
@@ -280,7 +285,32 @@
                     inputElement.value = '';
                     // pop up aleart letting the user know their email has been submitted
                     alert(`Thank you for Subscibing to our newsletter`);
-                } // if it is empty then do nothing because the form is not mandatory for our site porpuse.
+                } else {
+                    alert('Please enter your email')
+                }
+        });
+
+        // Added the hamburger menu links in the html so that i could toogle the display property insted of adding new elements.
+        const ulElement = document.querySelector('#hamburgerMenu');
+
+        // get class in whoch the hamburger menu is in and assign it to a variable
+        const navElement = document.querySelector('.homeNavBar');
+        // get the hamburger menu image within the class .homeNavBar
+        const burgerMenu = navElement.children[3]
+
+        // add event listener for click on hamburger menu img
+        burgerMenu.addEventListener('click', function (e) {
+            // if the display property of the ulElement is none or empty then;  
+            if (ulElement.style.display == '' || ulElement.style.display == 'none') {
+                // display the links 
+                ulElement.style.display = 'block';
+                // not sure why it isn't styled so I had to do it again
+                ulElement.style.display = 'flex';
+                ulElement.style.justifyContent = 'space-around'
+                // id display property is anything other than what is stated above then, hide the links with display = none;
+            } else {
+                ulElement.style.display = 'none';
+            }
         });
 
     </script>

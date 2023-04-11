@@ -25,6 +25,11 @@
                     <img src="./assets/icons/shopping-cart-black-icon.png" alt="checkout icon">
                     <img src="./assets/icons/hamburger-menu-svgrepo-com.svg" alt="Hamburger drop down menu">
                 </nav>
+                <ul id = "hamburgerMenu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
             </div>
         </section>
         <section class="contactHeadingContainer">
@@ -141,45 +146,97 @@
     </footer>
 
     <script>
-
+        // find form element and assign it to variable(note. this gives us a list of forms)
         const formElement = document.querySelectorAll('form');
+        // since we have multiple form elements in this list, we loop through each one, using element(is each form) as parameter.
         formElement.forEach(element => {
-            console.log(element);
+            // add an event listener on submission
             element.addEventListener('submit', function (e) {
                 // prevent form default
                 e.preventDefault();
+                // add each input into a new input list, excluding the input type = submit
                 const inputElementList = document.querySelectorAll('input[type = "text"]');
+                // now loop though the input list to get each input value
                 inputElementList.forEach(inputElementValue => {
-                    console.log(inputElementValue);
+                    // console.log(inputElementValue);
                     const task = inputElementValue.value;
-                    console.log(task);
+                    // console.log(task);
 
                     if (task) {
                         inputElementValue.value = '';
                         
-                    }
-                });          
+                    } // else {
+                        // log (Enter name/email please.)
+                    
+                });
+                // letting the user know that we have got their submission        
                 alert(`We have got your submission! :) We will be sending you an update shortyly. Thank you`)    
             });
         });
-        
-        //     // listen to when that form is submitted
-        // formElement.addEventListener('submit', function (e) {
-        //     // prevent form default
-        //     event.preventDefault();
-        //     // get the input value from the user and store it
-        //     const inputElement = document.querySelector('input');
-        //     // assigning task the value(the user's input) of our inputElement
-        //     const task = inputElement.value;
 
-        //     // checks if the input is empty or not, and if not then do the following:
-        //     if (task) {
-        //         // clears the form
-        //         inputElement.value = '';
-        //         // pop up aleart letting the user know their email has been submitted
-        //         alert(`Thank you for Subscibing to our newsletter`);
-        //     } // if it is empty then do nothing because the form is not mandatory for our site porpuse.
+        // Got this one working but couldnt open and close properly.
+        // // get class in whoch the hamburger menu is in and assign it to a variable
+        // const navElement = document.querySelector('.homeNavBar');
+        // // get the hamburger menu image within the class .homeNavBar
+        // const burgerMenu = navElement.children[3]
+
+        // // event listener for click on hamburger menu
+        // burgerMenu.addEventListener('click', function(e) {
+                            
+            // // create a new ul 
+            // const ulElement = document.createElement('ul')
+
+            // // create a new li for each a tag we have
+            // const listItemElement1 = document.createElement('li');
+            // // populate the li with the correct a tags
+            // listItemElement1.innerHTML = '<a href="./index.html">Home</a>'
+
+            // const listItemElement2 = document.createElement('li');
+            // listItemElement2.innerHTML = '<a href="#">Blog</a>'
+
+            // const listItemElement3 = document.createElement('li');
+            // listItemElement3.innerHTML = '<a href="./contact.html">Contact</a>'
+
+            // // add all li inside ul
+            // ulElement.append(listItemElement1, listItemElement2, listItemElement3);
+ 
+            // // making the list flex and have space around each item
+            // ulElement.style.display = 'flex';
+            // ulElement.style.justifyContent = 'space-around';
+            
+            // // adding the newly made ul into our html(inside the parent element of homeNavBar class)
+            // navElement.parentElement.appendChild(ulElement)
+
+            
         // });
+
+        // Added the hamburger menu links in the html so that i could toogle the display property insted of adding new elements.
+        const ulElement = document.querySelector('#hamburgerMenu');
+        
+        // get class in whoch the hamburger menu is in and assign it to a variable
+        const navElement = document.querySelector('.homeNavBar');
+        // get the hamburger menu image within the class .homeNavBar
+        const burgerMenu = navElement.children[3]
+        
+        // add event listener for click on hamburger menu img
+        burgerMenu.addEventListener('click', function(e){
+            // if the display property of the ulElement is none or empty then;  
+            if (ulElement.style.display == '' || ulElement.style.display == 'none') {
+                // display the links 
+                ulElement.style.display = 'block';
+                // not sure why it isn't styled so I had to do it again
+                ulElement.style.display = 'flex';
+                ulElement.style.justifyContent = 'space-around'
+            // id display property is anything other than what is stated above then, hide the links with display = none;
+            } else {
+                ulElement.style.display = 'none';
+            }
+        });
+        
+
+        
+        
+
 
     </script>
 
